@@ -11,10 +11,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function(req, res){
   res.sendFile(path.join(__dirname, 'views/index.html'));
 });
-app.get('/list', function(req, res){
+app.get('/123', function(req, res){
   res.sendFile(path.join(__dirname, 'views/123.html'));
 });
-app.get('*', function(req, res){
+app.get('/list', function(req, res){
   res.status(404).sendFile(path.join(__dirname, 'views/list.html'));
 });
 //express server listen
